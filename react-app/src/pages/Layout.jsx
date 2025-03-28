@@ -35,6 +35,7 @@ export default function Layout() {
               user ? (
                 <div className='space-x-4'>
                   <p className='inline text-white t p-4'> {user.name}</p>
+                  <Link to='/create' className='  hover:bg-gray-700 p-2 hover:rounded-md'>Create Post</Link>
                   <form onSubmit={handleLogout} className='inline'>
                     <button className='  hover:bg-gray-700 p-2 hover:rounded-md'>Logout</button>
                   </form>
@@ -50,7 +51,7 @@ export default function Layout() {
 
         </nav>
     </header>
-    <main>
+    <main className='ontainer mx-auto max-w-7xl px-1'>
         <Outlet/>
     </main>
     </>

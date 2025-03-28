@@ -39,7 +39,7 @@ export default function Register() {
     
     return (
     <>
-        <h1 className='text-center text-gray-900 pt-4 text-4xl text-'>Register a new account</h1>
+        <h1 className='text-center text-gray-900 pt-4 text-3xl font-bold'>Register a new account</h1>
         
   <form onSubmit={handleRegister} className="max-w-md mx-auto bg-gray-900 p-6 rounded-xl shadow-md space-y-5 my-10">
   <div className="flex flex-col gap-1">

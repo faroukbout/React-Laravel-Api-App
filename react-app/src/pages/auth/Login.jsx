@@ -38,7 +38,7 @@ export default function Login() {
     
     return (
     <>
-        <h1 className='text-center text-gray-900 pt-4 text-4xl text-'>Login to your account</h1>
+        <h1 className='text-center text-gray-900 pt-4 text-3xl font-bold'>Login to your account</h1>
         
   <form onSubmit={handleLogin} className="max-w-md mx-auto bg-gray-900 p-6 rounded-xl shadow-md space-y-5 my-10">
 
