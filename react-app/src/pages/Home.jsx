@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -30,13 +31,22 @@ export default function Home() {
     <div className="mb-4 border-b border-gray-300 pb-3">
       <h2 className="text-2xl font-semibold text-gray-800">{post.title}</h2>
       <small className="text-gray-500 block mt-1">
-        Created by <span className="font-medium text-gray-700">{post.user.name}</span> • {new Date(post.created_at).toLocaleTimeString()}
+        Created by <span className="font-medium text-gray-700">{post.user.name}</span> - {new Date(post.created_at).toLocaleTimeString()}
       </small>
     </div>
 
     <p className="text-gray-700 leading-relaxed">
       {post.content}
     </p>
+
+    <div className=" text-right">
+      <Link 
+        to={`/posts/${post.id}`} 
+        className="text-blue-600 font-medium hover:underline transition-all"
+      >
+        Read More →
+      </Link>
+    </div>
   </div>
 </div>
 
